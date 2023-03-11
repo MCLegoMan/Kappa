@@ -10,4 +10,4 @@ A custom origin made for JudgeAlexander
 - [ ] a bit short, maybe .75 or .8 the normal player height  
 - [x] aqua affinity by defualt, but no depth strider (depth strider messes up tridents with riptide ):< )  
 - [x] vegetarian, cant eat meat (this isnt true to the folklore however they love cucumbers so instead of having an affinty for a crop that doesnt exist, i think just eating vegetables to compensate will make a bit of sense  
-- [ ] susceptible to the cold. anytime im in a cold biome, i get the powdered snow freezing effect  
+- [X] susceptible to the cold. anytime im in a cold biome, i get the powdered snow freezing effect  
