@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "kappa",
+  "version": "${version}",
+
+  "name": "Kappa",
+  "description": "Custom Origin",
+  "authors": [
+    "MCLegoMan",
+    "JudgeAlexander"
+  ],
+  "contact": {
+    "homepage": "https://github.com/MCLegoMan",
+    "sources": "https://github.com/MCLegoMan/kappa"
+  },
+
+  "license": "MCLM-OSL (2022)",
+  "icon": "kappa/textures/kappa.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.mclegoman.kappa.client.KappaClient"
+    ],
+    "main": [
+      "com.mclegoman.kappa.server.KappaServer"
+    ]
+  },
+  "mixins": [
+    "kappa.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "<=1.19.2",
+    "origins": "*",
+    "pehkui": "*"
+  }
+}

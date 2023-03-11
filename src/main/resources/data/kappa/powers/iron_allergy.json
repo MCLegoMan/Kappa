@@ -1,0 +1,172 @@
+{
+  "name": "Iron Allergy",
+  "description": "Your body cannot handle iron.",
+  "type": "origins:multiple",
+  "minecart": {
+    "type": "origins:prevent_entity_use",
+    "bientity_action": {
+      "type": "origins:actor_action",
+      "action": {
+        "type": "origins:execute_command",
+        "command": "title @s actionbar {\"text\": \"Cannot interact with iron!\", \"color\": \"red\"}"
+      }
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:minecart"
+      }
+    }
+  },
+  "chest_minecart": {
+    "type": "origins:prevent_entity_use",
+    "bientity_action": {
+      "type": "origins:actor_action",
+      "action": {
+        "type": "origins:execute_command",
+        "command": "title @s actionbar {\"text\": \"You cannot interact wit1h iron!\", \"color\": \"red\"}"
+      }
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:chest_minecart"
+      }
+    }
+  },
+  "furnace_minecart": {
+    "type": "origins:prevent_entity_use",
+    "bientity_action": {
+      "type": "origins:actor_action",
+      "action": {
+        "type": "origins:execute_command",
+        "command": "title @s actionbar {\"text\": \"Cannot interact with iron!\", \"color\": \"red\"}"
+      }
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:furnace_minecart"
+      }
+    }
+  },
+  "tnt_minecart": {
+    "type": "origins:prevent_entity_use",
+    "bientity_action": {
+      "type": "origins:actor_action",
+      "action": {
+        "type": "origins:execute_command",
+        "command": "title @s actionbar {\"text\": \"Cannot interact with iron!\", \"color\": \"red\"}"
+      }
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:tnt_minecart"
+      }
+    }
+  },
+  "hopper_minecart": {
+    "type": "origins:prevent_entity_use",
+    "bientity_action": {
+      "type": "origins:actor_action",
+      "action": {
+        "type": "origins:execute_command",
+        "command": "title @s actionbar {\"text\": \"Cannot interact with iron!\", \"color\": \"red\"}"
+      }
+    },
+    "bientity_condition": {
+      "type": "origins:target_condition",
+      "condition": {
+        "type": "origins:entity_type",
+        "entity_type": "minecraft:hopper_minecart"
+      }
+    }
+  },
+  "armor": {
+    "type": "origins:restrict_armor",
+    "head": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "kappa:iron"
+      }
+    },
+    "chest": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "kappa:iron"
+      }
+    },
+    "legs": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "kappa:iron"
+      }
+    },
+    "feet": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "kappa:iron"
+      }
+    }
+  },
+  "prevent_block_use": {
+    "type": "origins:prevent_block_use",
+    "block_condition": {
+      "type": "origins:in_tag",
+      "tag": "kappa:iron"
+    }
+  },
+  "prevent_item_use": {
+    "type": "origins:prevent_item_use",
+    "item_condition": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "tag": "kappa:iron"
+      }
+    }
+  },
+  "damage_when_item_in_hand": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:wither",
+        "amplifier": 0,
+        "duration": 40,
+        "show_particles": false,
+        "show_icon": true
+      }
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:or",
+      "conditions": [
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "mainhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "kappa:iron"
+            }
+          }
+        },
+        {
+          "type": "origins:equipped_item",
+          "equipment_slot": "offhand",
+          "item_condition": {
+            "type": "origins:ingredient",
+            "ingredient": {
+              "tag": "kappa:iron"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

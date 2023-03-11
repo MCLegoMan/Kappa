@@ -1,0 +1,9 @@
+{
+  "name": "Sumo Wrestle",
+  "description": "You have a natural knockback when you hit things.",
+  "type": "origins:action_on_hit",
+  "bientity_action": {
+    "type": "origins:add_velocity",
+    "z": 2
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "Water Dish",
+  "description": "Your head can only support Turtle Helmets.\nWithout one you will become very slow.",
+  "type": "origins:multiple",
+  "armour": {
+    "type": "origins:restrict_armor",
+    "head": {
+      "type": "origins:ingredient",
+      "ingredient": {
+        "item": "minecraft:turtle_helmet"
+      },
+      "inverted": true
+    }
+  },
+  "slowness": {
+    "type": "origins:action_over_time",
+    "entity_action": {
+      "type": "origins:apply_effect",
+      "effect": {
+        "effect": "minecraft:slowness",
+        "amplifier": 2,
+        "duration": 40,
+        "show_particles": false,
+        "show_icon": true
+      }
+    },
+    "interval": 20,
+    "condition": {
+      "type": "origins:equipped_item",
+      "equipment_slot": "head",
+      "item_condition": {
+        "type": "origins:ingredient",
+        "ingredient": {
+          "item": "minecraft:turtle_helmet"
+        }
+      },
+      "inverted": true
+    }
+  }
+}

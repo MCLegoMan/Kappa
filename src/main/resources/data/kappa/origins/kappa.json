@@ -1,0 +1,20 @@
+{
+  "name": "Kappa",
+  "description": "wait, did you want me to write a description...\n\nIdea: JudgeAlexander \nDeveloper: MCLegoMan",
+  "powers": [
+    "origins:water_breathing",
+    "kappa:water_dish",
+    "kappa:sumo_wrestle",
+    "kappa:iron_allergy",
+    "kappa:magnetic_golem",
+    "kappa:smol_boi",
+    "origins:aqua_affinity",
+    "origins:vegetarian",
+    "kappa:cold_blooded",
+    "origins:aquatic",
+    "origins:conduit_power_on_land",
+    "origins:air_from_potions"
+  ],
+  "icon": "minecraft:water_bucket",
+  "impact": 2
+}

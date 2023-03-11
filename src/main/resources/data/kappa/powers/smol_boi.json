@@ -1,0 +1,25 @@
+{
+  "name": "Smol Boi",
+  "description": "You are around 75% the size of a human.",
+  "type": "origins:action_over_time",
+  "interval": 10,
+  "entity_action": {
+    "type": "origins:and",
+    "actions": [
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:height 0.75 @s",
+        "permission_level": 4
+      },
+      {
+        "type": "origins:execute_command",
+        "command": "scale set pehkui:width 0.75 @s",
+        "permission_level": 4
+      }
+    ]
+  },
+  "entity_action_lost": {
+    "type": "origins:execute_command",
+    "command": "scale reset @s"
+  }
+}

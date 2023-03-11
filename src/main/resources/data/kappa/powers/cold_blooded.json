@@ -1,0 +1,13 @@
+{
+  "name": "Cold Blooded",
+  "description": "Your body cannot handle the cold.",
+  "type": "origins:freeze",
+  "condition": {
+    "type": "origins:biome",
+    "condition": {
+      "type": "origins:temperature",
+      "comparison": "<=",
+      "compare_to": 0.1
+    }
+  }
+}
